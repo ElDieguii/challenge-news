@@ -31,14 +31,17 @@ const News = () => {
   };
 
   const checkIsFav = (row) => {
-    return JSON.parse(localStorage.getItem('favs')).filter(fav => fav.objectID === row.objectID).length !== 0
+    const favs = JSON.parse(localStorage.getItem('favs'));
+    if (favs) {
+      return favs.filter(fav => fav.objectID === row.objectID).length !== 0
+    }
+    return false
   }
 
   const handleGetFirstNews = async (option, page) => {
     setNewsLoading(true);
     await handleGetNews(option, page)
     setNewsLoading(false);
-
   }
 
 
@@ -92,9 +95,7 @@ const News = () => {
   const lastNewsRef = useRef();
 
   useEffect(() => {
-
     if (newsLoading || currentPage >= totalPages) return;
-
     observer.current = new IntersectionObserver(async (entries) => {
       if (entries[0].isIntersecting) {
         setIsLoading(true);
@@ -108,7 +109,7 @@ const News = () => {
     }
 
     return () => observer.current.disconnect();
-  }, [newsLoading, currentPage, totalPages]);
+  }, [newsLoading, currentPage, totalPages, activeTab]);
 
 
   const handleSetOption = (option) => {

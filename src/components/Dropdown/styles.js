@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const FrameworkIcon = styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+`
+
 export const DropdownContainer = styled.div`
   position: relative;
   display: inline-block;
@@ -69,6 +74,9 @@ export const DropdownItem = styled.div`
   line-height: 1.57;
   letter-spacing: normal;
   color: #343434;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
   cursor: pointer;
   &:hover {
     background-color: #f9f9f9;

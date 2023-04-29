@@ -48,6 +48,7 @@ export const Title = styled.div`
   line-height: 1.43;
   letter-spacing: 0.25px;
   color: #6b6b6b;
+  margin-top: 0.3rem;
 `
 
 export const CreatedAt = styled.div`
