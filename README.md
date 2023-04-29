@@ -12,6 +12,8 @@ News data is fetched from: https://hn.algolia.com/api
 - Developed in React v18.2.0
 - Designed by: https://app.zeplin.io/project/5ef1360ffa198a4932d1bb92/flow/621fb2217f4a17ab702374ab
 
+### Deploy Url
+- https://main--exquisite-starburst-e91442.netlify.app/
 
 ## Installation
 ### Install NPM packages
