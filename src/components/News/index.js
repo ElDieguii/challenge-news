@@ -14,8 +14,6 @@ const News = () => {
   const [selectedOption, setSelectedOption] = useState(null)
   const [activeTab, setActiveTab] = useState('all');
 
-
-
   const handleGetNews = async (option, page) => {
     const { data } = await axios.get(`https://hn.algolia.com/api/v1/search_by_date?query=${option}&page=${page}`);
     if (option !== selectedOption) {
