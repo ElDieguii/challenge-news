@@ -47,9 +47,9 @@ const New = ({ content, aRef = null, isFavorite }) => {
       <FavContainer>
         {
           isFav || isFavorite ?
-            <FavIcon onClick={() => handleIsFave(false)} src={favSvg} alt="Mi SVG" />
+            <FavIcon onClick={() => handleIsFave(false)} src={favSvg} alt="fav_svg" />
             :
-            <FavIcon onClick={() => handleIsFave(true)} src={notFavSvg} alt="Mi SVG" />
+            <FavIcon onClick={() => handleIsFave(true)} src={notFavSvg} alt="no_fav_svg" />
         }
       </FavContainer>
     </Container>
