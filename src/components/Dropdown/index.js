@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { DropdownButton, DropdownContainer, DropdownItem, DropdownMenu } from "./styles";
 

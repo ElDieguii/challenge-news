@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import News from "./components/News";
-import Tabs from "./components/Tabs";
 import { Container } from "./styles";
 
 
